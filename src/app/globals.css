@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+header {
+  width: fit-content;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+
+  background-color: #F0F2F9;
+}
+
+header .title {
+  padding: 1vw;
+  background-color: #232020;
+  color: white;
+}
+
+header .menu {
+  display: flex;
+  flex-direction: column;
+}
+
+header .menu li {
+  padding: 1vw;
+  background-color: #F0F2F9;
+}
+
+header .menu li:hover {
+  background-color: #4059AD;
+}
