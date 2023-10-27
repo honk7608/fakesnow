@@ -34,8 +34,9 @@ header {
 
 header .title {
   padding: 1vw;
-  background-color: #232020;
+  background-color: #002DF5;
   color: white;
+  font-weight: 900;
 }
 
 header .menu {
@@ -45,7 +46,8 @@ header .menu {
 
 header .menu li {
   padding: 1vw;
-  background-color: #F0F2F9;
+  background-color: transparent;
+  font-weight: 700;
 }
 
 header .menu li:hover {
