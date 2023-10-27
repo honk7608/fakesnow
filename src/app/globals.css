@@ -34,8 +34,8 @@ header {
 
 header .title {
   padding: 1vw;
-  color: #002DF5;
-  background-color: white;
+  background-color: #002DF5;
+  color: white;
   font-weight: 900;
 }
 
@@ -52,4 +52,5 @@ header .menu li {
 
 header .menu li:hover {
   background-color: #002DF5;
+  color: white;
 }
