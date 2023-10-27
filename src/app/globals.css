@@ -9,11 +9,12 @@
   font-family: TAEBAEKmilkyway;
   margin: 0;
   padding: 0;
+  color: black;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: inherit;
 }
 
 body {
@@ -29,12 +30,12 @@ header {
   flex-direction: column;
   gap: 0;
 
-  background-color: #ABDCFF;
+  background-color: #C2CDFF;
 }
 
 header .title {
   padding: 1vw;
-  background-color: #002DF5;
+  background-color: #0025CC;
   color: white;
   font-weight: 900;
 }
