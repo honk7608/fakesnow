@@ -29,7 +29,7 @@ header {
   flex-direction: column;
   gap: 0;
 
-  background-color: #F0F2F9;
+  background-color: #EE9996;
 }
 
 header .title {
@@ -49,5 +49,5 @@ header .menu li {
 }
 
 header .menu li:hover {
-  background-color: #4059AD;
+  background-color: #DD322C;
 }
