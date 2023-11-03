@@ -12,10 +12,8 @@ export default function RootLayout({ children }) {
         <header>
           <h1 className='title'>FakeSnow</h1>
           <ul className='menu'>
-            <li><a href="/">기능1</a></li>
-            <li><a href="/">기능2</a></li>
-            <li><a href="/">기능3</a></li>
-            <li><a href="/">기능4</a></li>
+            <li><a href="/">Background</a></li>
+            <li><a href="/">Mask</a></li>
           </ul>
         </header>
         <div className='option'>
