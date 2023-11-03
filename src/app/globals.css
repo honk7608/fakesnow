@@ -55,3 +55,11 @@ header .menu li:hover {
   background-color: #002DF5;
   color: white;
 }
+
+header .menu li:hover ::after {
+  background-color: #ebefff;
+}
+
+div.option {
+  background-color: #ebefff;
+}
