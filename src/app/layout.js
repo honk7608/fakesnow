@@ -13,7 +13,11 @@ export default function RootLayout({ children }) {
             <body>
                 <header>
                     <Link className='logo' href="/"></Link>
-                    <Menu />
+                    <ul className='menu'>
+                        <li key={1}><Link href='/function/Background'>Background</Link></li>
+                        <li key={2}><Link href='/function/Mask'>Mask</Link></li>
+                        <li key={3}><Link href='/description'>Description</Link></li>
+                    </ul>
                 </header>
                 {children}
             </body>

@@ -1,5 +1,5 @@
 export default function Home() {
   return (
-    <>Hello, Next.js!</>
+    <>홈 화면(추후 대략적인 소개글이 삽입될 예정)</>
   )
 }
