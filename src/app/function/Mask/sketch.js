@@ -24,17 +24,17 @@ let s
 
 function setup() {
   // img = loadImage('assets/redshroom.png'); // Load the image
-  img2 = loadImage('assets/ak1.png');
-  img3 = loadImage('assets/an.png');
-  img4 = loadImage('assets/bok.png');
-  img5 = loadImage('assets/bul.png');
-  img6 = loadImage('assets/chun.png');
-  img7 = loadImage('assets/cot.png');
-  img8 = loadImage('assets/ha.png');
-  img9 = loadImage('assets/ho.png');
-  img10 = loadImage('assets/joong.png');
-  img11 = loadImage('assets/pe.png');
-  img12 = loadImage('assets/ak2.png');
+  img2 = loadImage('/function/Mask/assets/ak1.png');
+  img3 = loadImage('/function/Mask/assets/an.png');
+  img4 = loadImage('/function/Mask/assets/bok.png');
+  img5 = loadImage('/function/Mask/assets/bul.png');
+  img6 = loadImage('/function/Mask/assets/chun.png');
+  img7 = loadImage('/function/Mask/assets/cot.png');
+  img8 = loadImage('/function/Mask/assets/ha.png');
+  img9 = loadImage('/function/Mask/assets/ho.png');
+  img10 = loadImage('/function/Mask/assets/joong.png');
+  img11 = loadImage('/function/Mask/assets/pe.png');
+  img12 = loadImage('/function/Mask/assets/ak2.png');
   images = [img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12]; 
   //mask=random(images);
   mask = img2;
