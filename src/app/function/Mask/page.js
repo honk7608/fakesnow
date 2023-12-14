@@ -5,7 +5,7 @@ export default function Func_page(){
                 <span className='div_title'>세부 설정 및 기능</span>
             </div>
             <main>
-                <>//마스크 조정 페이지</>
+                <script src="sketch.js"></script>
             </main>
         </>
         )
