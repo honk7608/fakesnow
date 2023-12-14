@@ -1,0 +1,16 @@
+div.selector {
+    display: flex;
+    flex-direction: column;
+}
+div.selector label {
+    padding: 1vw;
+    display: flex;
+    justify-content: space-between;
+}
+div.selector input[type="radio"]:checked {
+    background-color: blue;
+}
+
+div.selector input[type="radio"]:checked + label {
+    font-size: 100px;
+}
