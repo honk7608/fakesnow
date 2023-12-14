@@ -14,6 +14,8 @@ let img8
 let img9
 let img10
 let img11
+let img12
+let m
 let images
 let mask
 
@@ -22,20 +24,22 @@ let s
 
 function setup() {
   // img = loadImage('assets/redshroom.png'); // Load the image
-  img2 = loadImage('assets/ak.jpg');
-  img3 = loadImage('assets/an.jpg');
-  img4 = loadImage('assets/bok.jpg');
+  img2 = loadImage('assets/ak1.png');
+  img3 = loadImage('assets/an.png');
+  img4 = loadImage('assets/bok.png');
   img5 = loadImage('assets/bul.png');
-  img6 = loadImage('assets/chun.jpg');
-  img7 = loadImage('assets/cot.jpg');
+  img6 = loadImage('assets/chun.png');
+  img7 = loadImage('assets/cot.png');
   img8 = loadImage('assets/ha.png');
-  img9 = loadImage('assets/ho.jpg');
-  img10 = loadImage('assets/joong.jpg');
-  img11 = loadImage('assets/pe.jpg');
-  images = [img2, img3, img4, img5, img6, img7, img8, img9, img10, img11]; 
-  mask=random(images);
+  img9 = loadImage('assets/ho.png');
+  img10 = loadImage('assets/joong.png');
+  img11 = loadImage('assets/pe.png');
+  img12 = loadImage('assets/ak2.png');
+  images = [img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12]; 
+  //mask=random(images);
+  mask = img2;
   createCanvas(w, 360)
-  
+  m = img12;
   // setup the webcam capture
   capture = createCapture(VIDEO)
   capture.hide()
@@ -44,8 +48,8 @@ function setup() {
   tracker = new clm.tracker()
   tracker.init()
   tracker.start(capture.elt)
-    drawingContext.shadowBlur = 10;
-  drawingContext.shadowColor = 'green';
+    //drawingContext.shadowBlur = 100;
+  //drawingContext.shadowColor = 'green';
 
  
 }
@@ -70,5 +74,9 @@ function draw() {
   // get the face positions from the tracker
   let positions = tracker.getCurrentPosition()  
 
-  image(mask, positions[19][0]-55, positions[19][1]-75, positions[11][0]-positions[3][0]+100, positions[11][0]-positions[3][0]+100);
+  if(positions.length > 0) {
+    image(mask, positions[15][0]-10, positions[15][1]-110, positions[11][0]-positions[3][0]+20, positions[11][0]-positions[3][0]+20);
+    image(m, positions[19][0]-100, positions[19][1]-110, positions[11][0]-positions[3][0]+20, positions[11][0]-positions[3][0]+20);
+
+  }
 }
