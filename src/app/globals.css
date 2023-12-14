@@ -112,3 +112,7 @@ header .menu li:hover {
         background-color: #0025CC;
     }
 }
+
+canvas { //css 옮겨놓기
+  display: block;
+}
