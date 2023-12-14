@@ -10,6 +10,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html>
+            <head>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+                <script src="https://www.auduno.com/clmtrackr/build/clmtrackr.min.js"></script>
+            
+                <meta charset="utf-8" />
+            </head>
+
             <body>
                 <header>
                     <Link className='logo' href="/"></Link>
