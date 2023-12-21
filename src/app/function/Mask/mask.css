@@ -2,15 +2,34 @@ div.selector {
     display: flex;
     flex-direction: column;
 }
-div.selector label {
-    padding: 1vw;
-    display: flex;
-    justify-content: space-between;
+
+div.selector div.option{
+    padding: 0;
+    width: 100%;
 }
-div.selector input[type="radio"]:checked {
-    background-color: blue;
+
+div.selector label {
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+    padding: 1vw;
+    width: 100%;
+    
+    display: block;
+    
+    border-radius: 0.5vw;
+    text-align: center;
+
+    font-weight: bold;
+}
+
+div.selector input[type="radio"] {
+    display: none;
 }
 
 div.selector input[type="radio"]:checked + label {
-    font-size: 100px;
+    background-color: var(--text);
+
+canvas {
+    display: block;
 }
+    
