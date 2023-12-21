@@ -1,5 +1,16 @@
+import './home.css'
+
 export default function Home() {
-  return (
-    <>홈 화면(추후 대략적인 소개글이 삽입될 예정)</>
-  )
+    return (
+    <main>
+        <div className="page_introduction">
+            <div className="page_title">
+                YJ Snow
+            </div>
+            <div className="page_subtitle">
+                양지중학교 2023학년도 2학기 동아리 결과물
+            </div>
+        </div>
+    </main>
+    )
 }
