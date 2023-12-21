@@ -5,27 +5,32 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-}
-
-* {
-    font-family: TAEBAEKmilkyway, ONE-Mobile-POP;
-    margin: 0;
-    padding: 0;
-    color: black;
+@media (prefers-color-scheme: light) {
+    * {
+        --text: black;
+        --back0: #EBEFFF;
+        --back1: #C2CDFF;
+        --back2: #3358FF;
+        --backb: white;
+    }
 }
 
 @media (prefers-color-scheme: dark) {
     * {
-        color: white;
+        --text: white;
+        --back0: #000414;
+        --back1: #000B3d;
+        --back2: #0025CC;
+        --backb: black;
     }
-    body {
-        background-color: black;
-    }
+}
+
+* {
+    color: var(--text);
+    font-family: TAEBAEKmilkyway, ONE-Mobile-POP;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 a {
@@ -36,6 +41,7 @@ a {
 body {
     display: grid;
     grid-template-columns: auto auto 1fr;
+    background-color: var(--backb);
 }
 
 header {
@@ -46,13 +52,7 @@ header {
     flex-direction: column;
     gap: 0;
 
-    background-color: #C2CDFF;
-}
-
-@media (prefers-color-scheme: dark) {
-    header {
-        background-color: #000B3d;
-    }
+    background-color: var(--back1);
 }
 
 header .logo {
@@ -72,7 +72,6 @@ header .logo {
     }
 }
 
-    
 header .menu {
     display: flex;
     flex-direction: column;
@@ -88,32 +87,54 @@ header .menu li {
     position: relative;
 }
 
-header .menu li.active::after {
-    height: 50%;
-    aspect-ratio: 1/1;
-    content: '';
-    position: absolute;
-    transform: translateX(40%) rotate(45deg);
-
-    background-color: white;
-}
-
-header .menu li.active.mainF::after {
-    background-color: #ebefff;
-}
-
 header .menu li:hover {
-    background-color: #3358FF; /*#002DF5*/
+    background-color: var(--back2);
     color: white;
 }
 
-@media (prefers-color-scheme: dark) {
-    header .menu li:hover {
-        background-color: #0025CC;
-    }
+main {
+    padding: 1vw;
 }
 
-canvas {
-/* css 옮겨놓기 */
-  display: block;
+/* 기본 페이지 양식 */
+div.page_introduction {
+    padding: 1vw;
+    background-color: var(--back1);
+}
+
+div.page_introduction > * {
+    font-family: 'Pretendard Variable';
+    font-weight: 700;
+}
+
+div.page_introduction div.page_title {
+    font-style: inherit;
+    font-size: 5vw;
+}
+
+div.page_introduction div.page_subtitle {
+    font-style: inherit;
+    font-size: 2.5vw;
+}
+
+a.otherpage_link {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    padding: 1vw;
+    
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    font-weight: 700;
+    font-size: 2vw;
+
+    background-color: var(--back0);
+}
+
+a.otherpage_link img {
+    position: relative;
 }

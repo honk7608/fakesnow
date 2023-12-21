@@ -17,6 +17,7 @@ div.selector label {
     display: block;
     
     border-radius: 0.5vw;
+    background-color: var(--backb);
     text-align: center;
 
     font-weight: bold;
@@ -28,6 +29,8 @@ div.selector input[type="radio"] {
 
 div.selector input[type="radio"]:checked + label {
     background-color: var(--text);
+    color: var(--backb);
+}
 
 canvas {
     display: block;

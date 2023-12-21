@@ -1,15 +1,9 @@
 div.option {
     padding: 1vw;
-    background-color: #ebefff;
-}
-
-@media (prefers-color-scheme: dark) {
-    div.option {
-        background-color: #000414;
-    }
+    background-color: var(--back0);
 }
 
 div.option .div_title {
-    font-family: Pretendard;
+    font-family: "Pretendard Variable";
     font-weight: 900;
 }
