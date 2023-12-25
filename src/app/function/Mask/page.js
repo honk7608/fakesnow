@@ -55,7 +55,7 @@ export default function Func_page(){
                         
                     <div className='option'>
                         <input type="radio" id='mask10' value={10} name="maskType"/>
-                        <label id='mask10Label' htmlFor='mask10' >페페</label>
+                        <label id='mask10Label' htmlFor='mask10' >노드 표시</label>
                     </div>
                 </div>
             </div>
