@@ -10,9 +10,9 @@ export default function RootLayout({ children }) {
     return (
         <html>
             <head>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
-                <script src="https://www.auduno.com/clmtrackr/build/clmtrackr.min.js"></script>
+                <Script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"/>
+                <Script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"/>
+                <Script src="https://www.auduno.com/clmtrackr/build/clmtrackr.min.js"/>
 
                 <link rel="stylesheet" as="style" crossOrigin="true" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css"/>
                 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;900&display=swap" rel="stylesheet"></link>
