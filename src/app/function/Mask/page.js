@@ -5,7 +5,7 @@ import './mask.css'
 export default function Func_page(){
     return(
         <>
-            <Script src="/sketch.js"/>
+            <Script src="/sketch.js" strategy="beforeInteractive"/>
             <div className='option'>
                 <span className='div_title'>기능 선택</span>
                 <div className="selector">
