@@ -1,10 +1,11 @@
 'use client'
+import Script from 'next/script'
 import './mask.css'
 
 export default function Func_page(){
     return(
         <>
-            <script src="/sketch.js"></script>
+            <Script src="/sketch.js"/>
             <div className='option'>
                 <span className='div_title'>기능 선택</span>
                 <div className="selector">
